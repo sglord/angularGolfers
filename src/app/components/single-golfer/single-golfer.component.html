@@ -1,0 +1,22 @@
+<div>
+	<mat-card class="example-card">
+		<mat-card-header>
+			<div mat-card-avatar class="example-header-image"></div>
+			<mat-card-title>{{ golfer.name }}</mat-card-title>
+			<mat-card-subtitle>{{ golfer.par }}</mat-card-subtitle>
+		</mat-card-header>
+		<img
+			mat-card-image
+			src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+			alt="Photo of a Golfer"
+		/>
+		<mat-card-content>
+			<p>{{ golfer.description }}</p>
+		</mat-card-content>
+		<mat-card-actions>
+			<button (click)="updateGolfer(golfer.id)" mat-button>
+				Update Profile
+			</button>
+		</mat-card-actions>
+	</mat-card>
+</div>

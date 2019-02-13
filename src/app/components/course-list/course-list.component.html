@@ -1,0 +1,23 @@
+<div>
+	<mat-card *ngFor="let course of courses" class="example-card">
+		<mat-card-header>
+			<div mat-card-avatar class="example-header-image"></div>
+			<mat-card-title>{{ course.name }}</mat-card-title>
+			<mat-card-subtitle>{{ course.par }}</mat-card-subtitle>
+		</mat-card-header>
+		<img
+			mat-card-image
+			src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+			alt="Photo of a Course "
+		/>
+		<mat-card-content>
+			<p>{{ course.description }}</p>
+		</mat-card-content>
+		<mat-card-actions>
+			<button routerLink="{{ course.id }}" mat-button>
+				View this course
+			</button>
+		</mat-card-actions>
+	</mat-card>
+	<button routerLink="add">Add a golfer</button>
+</div>

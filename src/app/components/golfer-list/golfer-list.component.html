@@ -1,0 +1,23 @@
+<div>
+	<mat-card *ngFor="let golfer of golfers" class="example-card">
+		<mat-card-header>
+			<div mat-card-avatar class="example-header-image"></div>
+			<mat-card-title>{{ golfer.name }}</mat-card-title>
+			<mat-card-subtitle>{{ golfer.par }}</mat-card-subtitle>
+		</mat-card-header>
+		<img
+			mat-card-image
+			src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+			alt="Photo of a Golfer"
+		/>
+		<mat-card-content>
+			<p>{{ golfer.description }}</p>
+		</mat-card-content>
+		<mat-card-actions>
+			<button routerLink="{{ golfer.id }}" mat-button>
+				View this golfer
+			</button>
+		</mat-card-actions>
+	</mat-card>
+	<button routerLink="add">Add a golfer</button>
+</div>

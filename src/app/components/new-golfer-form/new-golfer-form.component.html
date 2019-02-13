@@ -1,0 +1,18 @@
+<form (ngSubmit)="submit()" [formGroup]="profileForm" class="course-form">
+	<mat-form-field class="example-full-width">
+		<input formControlName="name" matInput placeholder="Name" />
+	</mat-form-field>
+	<mat-form-field class="example-full-width">
+		<input formControlName="email" matInput placeholder="Email" />
+	</mat-form-field>
+	<mat-form-field class="example-full-width">
+		<input formControlName="phone" matInput placeholder="Phone" />
+	</mat-form-field>
+	<mat-form-field class="example-full-width">
+		<input formControlName="handicap" matInput placeholder="Handicap" />
+	</mat-form-field>
+	<mat-form-field class="example-full-width">
+		<input formControlName="imgUrl" matInput placeholder="Image URL" />
+	</mat-form-field>
+	<button type="submit">Submit</button>
+</form>

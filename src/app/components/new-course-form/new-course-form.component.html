@@ -1,0 +1,27 @@
+<form (ngSubmit)="submit()" [formGroup]="profileForm" class="course-form">
+	<mat-form-field class="example-full-width">
+		<input formControlName="name" matInput placeholder="Name" />
+	</mat-form-field>
+	<mat-form-field class="example-full-width">
+		<input formControlName="street" matInput placeholder="street" />
+	</mat-form-field>
+	<mat-form-field class="example-full-width">
+		<input formControlName="city" matInput placeholder="city" />
+	</mat-form-field>
+	<mat-form-field class="example-full-width">
+		<input formControlName="state" matInput placeholder="state" />
+	</mat-form-field>
+	<mat-form-field class="example-full-width">
+		<input formControlName="zip" matInput placeholder="zip" />
+	</mat-form-field>
+	<mat-form-field class="example-full-width">
+		<input formControlName="description" matInput placeholder="Description" />
+	</mat-form-field>
+	<mat-form-field class="example-full-width">
+		<input formControlName="par" matInput placeholder="Par" />
+	</mat-form-field>
+	<mat-form-field class="example-full-width">
+		<input formControlName="imgUrl" matInput placeholder="Image URL" />
+	</mat-form-field>
+	<button type="submit">Submit</button>
+</form>
